@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Appoinment Booking</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ <style>
+ .main-container{
+ background-image:url("wallbackground.png");
+ align-content: center;
+ height: 100vh;
+ margin:auto;
+ padding-left:550px;
+ }
+ .label1{
+ display:block;
+ color: Black;
+ font-weight:bold;
+ }
+ .type1{
+ width:400px;
+ border-radius: 10px;
+ background-color: white;
+ ;
+ }
+ .button1{
+ border-radius:10px;
+ margin:20px;
+ margin-left: 120px;
+ }
+ 
+ </style>
+</head>
+<body>
+<form action="Bookappoinmet" method="post">
+<div class="main-container">
+<label class="label1">Appoinment No</label>
+<input class="type1" type="text" name="appNo" placeholder="Enter appoinment number">
+<div>
+<label class="label1">Patient Name</label>
+<input  class="type1" type="text" name="patientName" placeholder="Enter patient name">
+</div>
+<div>
+<label class="label1">Patient Age</label>
+<input class="type1" type="text" name="patientAge" placeholder="Enter patient Age">
+</div>
+<div>
+<label class="label1">Patient DOB</label>
+<input class="type1" type="date" name="patientDob" placeholder="Enter patient DOB">
+</div>
+<div>
+<label class="label1">Respective Doctor</label>
+<input class="type1" type="text" list="Doctor" name="doctorName" placeholder="Choose concern doctor">
+<datalist id="Doctor">
+<option value="Dr.Radhi">
+<option value="Dr.Reena">
+<option value="Dr.Rocky">
+<option value="Dr.Arjun">
+<option value="Dr.Guna">
+</datalist>
+</div>
+<div>
+<label class="label1">Appoinment Date and Time</label>
+<input class="type1" type="datetime-local" name="dateandtime" placeholder="Choose appoinment date"> 
+</div>
+<button  class="button1" type="submit">Book Appoinment</button>
+</div>
+</form>
+</body>
+</html>
